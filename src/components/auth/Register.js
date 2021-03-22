@@ -21,11 +21,10 @@ function Register() {
                 passwordVerify,
             };
 
-            // await axios.post("http://localhost:5000/auth/", registerData);
-            await axios.post(
-                "https://mern-auth-template-tutorial.herokuapp.com/auth/",
-                registerData
-            );
+            // await axios.post("http://localhost:3000/auth/", registerData);
+            await axios.post("http://localhost:5000/auth/",
+                registerData);
+
             await getLoggedIn();
             history.push("/");
         } catch (err) {
@@ -35,7 +34,7 @@ function Register() {
 
     return (
         <div>
-            <h1>Register a new account</h1>
+            <h1>Register a new account!</h1>
             <form onSubmit={register}>
                 <input
                     type="email"

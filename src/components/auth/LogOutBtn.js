@@ -11,7 +11,7 @@ function LogOutBtn() {
     async function logOut() {
         // await axios.get("http://localhost:5000/auth/logout");
         await axios.get(
-            "https://mern-auth-template-tutorial.herokuapp.com/auth/logout"
+            "http://localhost:5000/auth/logout"
         );
         await getLoggedIn();
         history.push("/");

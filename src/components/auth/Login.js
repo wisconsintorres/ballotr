@@ -21,7 +21,7 @@ function Login() {
 
             // await axios.post("http://localhost:5000/auth/login", loginData);
             await axios.post(
-                "https://mern-auth-template-tutorial.herokuapp.com/auth/login",
+                "http://localhost:5000/auth/login",
                 loginData
             );
             await getLoggedIn();
