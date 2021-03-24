@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 import './Header.css';
-import logo from '../../images/main-logo.png';
+import logo from '../../images/alt-logo-3.png';
+import logo1 from '../../images/main-logo.png';
 import {Link, useHistory} from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
@@ -36,6 +37,7 @@ const Header = () => {
     }
 
     return (
+        <div className="body">
         <div className='header'>
             <div className="header_left">
 
@@ -47,6 +49,8 @@ const Header = () => {
             <div className="header_right">
                 {loggedIn === false && (
                     <>
+                        <img src={logo1} alt="main logo"/>
+
                         <div className="header_form">
 
                             <form onSubmit={login}>
@@ -63,10 +67,13 @@ const Header = () => {
                                     onChange={(e) => setPassword(e.target.value)}
                                     value={password}
                                 />
-                                <button type="submit">Log in</button>
+                                <div className="login-btn">
+                                <button className="login-btn-color" type="submit">Log in</button>
+                                </div>
                             </form>
-
-                            <button className="signup-btn" type="submit">Sign Up</button>
+                                <div className="signup-btn">
+                                <button className="signup-btn-color" type="submit">Sign Up</button>
+                                </div>
                         </div>
                     </>
                 )}
@@ -77,9 +84,10 @@ const Header = () => {
                     </>
                 )}
             </div>
+        </div>
+        <div className="footer">
 
-
-
+        </div>
         </div>
     );
 }

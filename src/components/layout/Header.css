@@ -1,13 +1,13 @@
 .header {
     display: flex;
     /* 15 top bottom, 20 left right */
-    padding: 15px 20px;
     justify-content: space-between;
     position: sticky;
     background-color: white;
     z-index: 100;
     top: 0;
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+
 
 }
 
@@ -16,50 +16,83 @@
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    padding-top: 100px;
+    background-image: url("../../images/audience.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header_left>img{
-    height: 500px;
+    height: 300px;
+}
+
+.header_right>img{
+    height: 200px;
 }
 
 
 
 .header_right{
-    display: flex;
+    display: inline;
     justify-content: space-evenly;
     width: 50%;
+    padding-top: 100px;
 }
 
 .header_form {
     max-width: 400px;
     max-height: 300px;
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
-    background-color: #fafafa;
-    margin-top: 200px;
+    background-color: #ffffff;
+    margin-top: 100px;
 
 }
 
 button {
-    background-color: #0383c7;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
     border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-button:hover{
+.login-btn-color:hover{
     background-color: #05A8FF;
 }
 
-.signup-btn {
-    background-color: #88001B;
+.login-btn{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
-.signup-btn:hover{
+.login-btn-color{
+    background-color: #0383c7;
+
+}
+
+.signup-btn {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.signup-btn-color{
+    background-color: #88001B;
+
+}
+
+.signup-btn-color:hover{
     background-color: #CF3400;
 }
 
@@ -71,6 +104,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 17px;
 
 }
 
