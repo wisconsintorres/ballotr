@@ -4,6 +4,7 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Customers from "./components/customers/Customers";
 import Navbar from "./components/layout/Navbar";
+import Header from "./components/layout/Header";
 import AuthContext from "./context/AuthContext";
 
 function Router() {
@@ -11,7 +12,8 @@ function Router() {
 
     return (
         <BrowserRouter>
-            <Navbar />
+            <Header />
+
             <Switch>
                 <Route exact path="/">
                     <div>Home</div>
