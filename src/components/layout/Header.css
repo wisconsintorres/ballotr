@@ -18,7 +18,7 @@
     width: 50%;
     padding-top: 100px;
     background-image: url("../../images/audience.jpg");
-    height: 600px;
+    height: 775px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,9 @@
 
 .header_right>img{
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -42,11 +45,18 @@
 }
 
 .header_form {
-    max-width: 400px;
-    max-height: 300px;
-    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    width: 450px;
+    height: 300px;
+    box-shadow: 0px 7px 8px -9px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #fafafa;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 10px;
 
 }
 
@@ -97,9 +107,10 @@ button {
 }
 
 input {
-    width: 100%;
+    width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
+    margin-left: 58px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -107,4 +118,45 @@ input {
     font-size: 17px;
 
 }
+
+.footer {
+    font-size: 14px;
+    text-align: center;
+    color: darkgray;
+    font-family: Arial;
+}
+
+.form-popup {
+    width: 450px;
+    height: 400px;
+    display: block;
+    position: fixed;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    margin-left: auto;
+    margin-right: 700px;
+    margin-top: 200px;
+    border-radius: 10px;
+    padding-top: 10px;
+    background-color: white;
+    opacity: 100%;
+}
+
+.form-bg{
+    display: none;
+    position: fixed;
+    background-color: white;
+
+
+}
+
+.register-btn {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 

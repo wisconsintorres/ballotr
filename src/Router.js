@@ -16,7 +16,7 @@ function Router() {
 
             <Switch>
                 <Route exact path="/">
-                    <div>Home</div>
+
                 </Route>
                 {loggedIn === false && (
                     <>
